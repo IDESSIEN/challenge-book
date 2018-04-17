@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Address Book</title>
+    <style type="text/css">
+        body {
+        background-image: url("image/marseille.png");
+        }
+    </style>
+</head>
+<body>
+
+        <div id="navigation">
+            <ul class="nav-list">
+                <a class="brand" href="main.html">My Address Book</a>
+                <li id="js-show-all"><a>Show all Contacts</a></li>
+                <li id="js-search"><a>Search</a></li>
+                <li id="js-add-new"><a>Add New Contact</a></li>
+            </ul>
+        </div>
+        <div id="search-panel" class="panel">
+            <h1>Search Contacts</h1>
+            <form id="search" action="#">
+                <div id="results">
+
+                </div>
+                <div>
+                    <label>
+                        <input type="search" name="search" id="find" placeholder="Enter name of contact" required/>
+                    </label>
+                </div>
+                <input type="submit" value="Submit" required/>
+            </form>
+        </div>
+        <div id="contact-panel" class="panel">
+            <form id="contact" action="#">
+                <h1>Add a new contact</h1>
+                <div>
+                    <label>
+                        <input type="text" name="person" id="name" placeholder="Idongesit Essien" required/>
+
+                        <input type="text" name="phone" pattern="[000]-[000][0000]" id="numeric" placeholder="Enter Phone Number" required/>
+
+                        <input type="email" name="email" id="txtEmail" placeholder="idessien@datmail.com" required/>
+
+                        <input type="text" name="address" id="address" placeholder="Enter Address" required/>
+                    </label>
+
+                    <input type="submit" value="Submit" required/>
+                    <input type="reset"/>
+                </div>
+            </form>
+        </div>
+
+        <div id = "show-panel" class="panel"></div>
+        <script  src="js/main.js"></script>
+</body>
+</html>
